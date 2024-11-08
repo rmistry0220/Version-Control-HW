@@ -6,7 +6,7 @@ In example.py use the following to run the python script in the base environment
 python app/example.py
 ```
 
-### Setup for Unemployment Python Script
+### Setup for Unemployment and Stocks Python Script
 
 Create and activate a virtual environment (first time only):
 ```sh
@@ -34,4 +34,9 @@ ALPHAVANTAGE_API_KEY="..."
 Run the unemployment script:
 ```sh
 python app/unemployment_report.py
+```
+
+Run the stocks script:
+```sh
+python app/stocks_report.py
 ```
