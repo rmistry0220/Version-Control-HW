@@ -29,6 +29,18 @@ Create a ".env" file and add contents like the following (using your own AlphaVa
 # this is the ".env" file:
 ALPHAVANTAGE_API_KEY="..."
 ```
+
+### Email Setup
+Create a Mailgun account with your business or university email address (i.e. MAILGUN_SENDER_ADDRESS). 
+
+Click the verification link sent to that address.
+
+Login. Find and click the nav link about "Sending" email. From the domains page, note the sandbox domain provided to you by default (i.e. MAILGUN_DOMAIN like "sandbox-xyz.mailgun.org").
+
+Find and click on API Key settings link on bottom right, then on the API Keys page, scroll down and click the button to create a new API Key (i.e. MAILGUN_API_KEY).
+
+Before proceeding, set these credentials as in the .env file (MAILGUN_SENDER_ADDRESS, MAILGUN_DOMAIN , and MAILGUN_API_KEY).
+
 ### Usage
 
 Run the unemployment script:
@@ -39,4 +51,9 @@ python app/unemployment_report.py
 Run the stocks script:
 ```sh
 python app/stocks_report.py
+```
+
+Run the email sending script:
+```sh
+python app/email_service.py
 ```
