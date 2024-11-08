@@ -39,7 +39,13 @@ Login. Find and click the nav link about "Sending" email. From the domains page,
 
 Find and click on API Key settings link on bottom right, then on the API Keys page, scroll down and click the button to create a new API Key (i.e. MAILGUN_API_KEY).
 
-Before proceeding, set these credentials as in the .env file (MAILGUN_SENDER_ADDRESS, MAILGUN_DOMAIN , and MAILGUN_API_KEY).
+Before proceeding, set these credentials in the .env file (MAILGUN_SENDER_ADDRESS, MAILGUN_DOMAIN , and MAILGUN_API_KEY).
+```sh
+# this is the ".env" file:
+MAILGUN_API_KEY="..."
+MAILGUN_DOMAIN="...."
+MAILGUN_SENDER_ADDRESS="..."
+```
 
 ### Usage
 
